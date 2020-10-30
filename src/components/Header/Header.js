@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import cv from '../../files/touhiduzzaman-resume.pdf';
 
 const Header = () => {
 
@@ -35,7 +36,7 @@ const Header = () => {
                         </li>
                     </ul>
 
-                    <a href=" " download="Shakil Ahmed CV"><button className="btn btn-outline-success my-2 my-sm-0" >Get Resume</button></a>
+                    <a href={cv} download="Touhiduzzaman CV"><button className="btn btn-outline-success my-2 my-sm-0" >Get Resume</button></a>
                 </div>
             </div>
         </nav >

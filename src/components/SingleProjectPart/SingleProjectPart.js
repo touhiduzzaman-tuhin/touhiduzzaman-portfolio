@@ -20,7 +20,7 @@ const SingleProjectPart = (props) => {
                 <h5>Category: <span className="green-yellow-text">{category}</span></h5>
                 <p>{description}</p>
                 <p><strong>Technologies used:</strong> <span className="green-yellow-text">{technologies}</span></p>
-                <a className="btn mr-2 mt-2 btn-secondary" target='_blank' href={githubRipository}>Github Rispository</a>
+                <a className="btn mr-2 mt-2 btn-secondary" target='_blank' href={githubRipository}>Github Repository</a>
                 <a className="btn mr-2 mt-2 btn-primary" target='_blank' href={liveWebsite}>Visit Live Website</a>
             </div>
             <div className="col-md-5">

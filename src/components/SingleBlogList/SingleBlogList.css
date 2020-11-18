@@ -10,3 +10,9 @@
 .card-title {
     color: greenyellow
 }
+.blog-image {
+    height: 100px;
+}
+.blog-button{
+    margin-left: 120px;
+}

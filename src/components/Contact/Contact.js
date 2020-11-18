@@ -1,90 +1,93 @@
-import React from 'react';
-
-const Contact = () => {
-    return (
-        <div align='center'>
-            <h3>Contact Page Coming Soon.....</h3>
-        </div>
-    );
-};
-
-export default Contact;
 // import React from 'react';
-// import './Contact.css';
+// import emailjs from 'emailjs-com'
+// import './Contact.css'
 
 // const Contact = () => {
+//     const sendEmail = e => {
+//         e.preventDefault();
+
+//     emailjs.sendForm('gmail', 'template_rqbcaxx', e.target, 'user_PZ7G31scmxCmOoXslb2Ps')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//       e.target.reset();
+//     }
 //     return (
-//         <div className="contactArea pageMarsing">
+//         <div className="contact-body">            
 //             <div className="container">
-//                 <div className="row">
-//                     <article >
-//                         <h2 className="">Why You Contact Me?</h2>
-//                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora voluptates quam, aliquid at fuga iste nobis dolores. Enim pariatur autem assumenda, doloremque tempore omnis quidem, ipsa alias officiis vel, itaque nisi reprehenderit accusamus ut! Dolores molestiae unde quod quos distinctio est nemo molestias dolorum, sapiente, commodi, qui pariatur ex?</p>
+//             <form onSubmit={sendEmail}  >
 
-//                     </article>
-//                 </div>
-//                 <div className="row">
-//                     <div className="col-md-7">
-//                         <section className="contactForm">
-//                             <form action="" >
-//                                 <fieldset>
-//                                     <legend><h3>Contact By Form</h3></legend>
-//                                     <div className="name formItem">
-//                                         <label htmlFor=""><span>Full Name</span><span>:</span></label>
-//                                         <input type="text" required/>
-//                                     </div>
-//                                     <div className="phone formItem">
-//                                         <label htmlFor=""><span>Phone Number</span><span>:</span></label>
-//                                         <input type="number" required/>
-
-//                                     </div>
-//                                     <div className="email formItem">
-//                                         <label htmlFor=""><span>Email ID</span><span>:</span></label>
-//                                         <input type="email" required/>
-//                                     </div>
-//                                     <div className="address formItem">
-//                                         <label htmlFor=""><span>Present Address</span><span>:</span></label>
-//                                         <input type="text" required/>
-//                                     </div>
-//                                     <div className="resone ">
-//                                         <label htmlFor="">Causes of Contact<span> :</span></label><br/>
-//                                         <textarea name="" id="" cols="30" rows="10">
-
-//                                         </textarea>
-//                                     </div>
-//                                     <input type="submit" value="Submit"/>
-//                                     <input type="reset" value="Reset"/>
-//                                 </fieldset>
-//                             </form>
-//                         </section>
+//             <h1 style={{color:" white", textAlign:"center", margin:"20px 0px 20px 0px"}} >Get In Touch</h1>
+                   
+//                     <div className="row mx-auto">
+                        
+//                         <div   className="col-8 form-group mx-auto  ">
+//                             <input width="300px" style={{width:"500px"}} type="text" className="form-control" placeholder="Name" name="name"/>
+//                         </div>
+//                         <div className="col-8 form-group pt-2 mx-auto">
+//                             <input type="email" style={{width:"500px"}} className="form-control" placeholder="Email Address" name="email"/>
+//                         </div>
+//                         <div className="col-8 form-group pt-2 mx-auto">
+//                             <input type="text" style={{width:"500px"}} className="form-control" placeholder="Subject" name="subject"/>
+//                         </div>
+//                         <div className="col-8 form-group pt-2 mx-auto">
+//                             <textarea className="form-control" style={{width:"500px"}} id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+//                         </div>
+//                         <div className="col-8 pt-3 mx-auto mb-4">
+//                             <input type="submit" className="btn btn-info" value="Send Message"></input>
+//                         </div>
 //                     </div>
-//                     <div className="col-md-1">
-//                         <div className="verticalBorder"></div>
-//                     </div>
-//                     <div className="col-md-4">
-//                         <aside className="contactInfo">
-//                             <h3>Contact Information</h3>
-//                             <div >
-//                                 <p><b>Phone Number: </b> 01863934966</p>
-//                                 <p><b>Email:</b> ariful4966@gmail.com</p>
-//                                 <address>
-//                                    <b>Permanent Address:</b><br/>
-//                                     Village:-Bohorkathi,
-//                                     Post: Hostisunda,
-//                                     PS: Wazirpur,
-//                                     Dist: Borisal,
-//                                     Zip Code: 8224,
-//                                     Country: Bangladesh
-
-//                                 </address>
-//                             </div>
-                            
-//                         </aside>
-//                     </div>
-//                 </div>
+//                 </form>
 //             </div>
 //         </div>
 //     );
 // };
 
 // export default Contact;
+
+import React from 'react';
+import { Button, Form } from 'react-bootstrap';
+import './Contact.css'
+import emailjs from 'emailjs-com';
+const Contact = () => {
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm("gmail", 'template_rqbcaxx', e.target, 'user_PZ7G31scmxCmOoXslb2Ps')
+          .then((result) => {
+              window.alert("Email sent to touhiduzzamantuhin95@gmail.com")
+          }, (error) => {
+              window.alert(error.text)
+          });
+          e.target.reset()
+      }
+    return (
+        <div className='contact-container'>
+            <Form className='form-container' onSubmit={sendEmail}>
+                <Form.Group controlId="formBasicName">
+                    <Form.Label>User name</Form.Label>
+                    <Form.Control type="name" placeholder="Enter your name" name="name" />
+                </Form.Group>
+
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>User email</Form.Label>
+                    <Form.Control type="email" placeholder="Enter your email" name="email" />
+                </Form.Group>
+                <Form.Group controlId="formBasicMessage">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows={3} placeholder="type your message here" name="message" />
+                </Form.Group>
+                <Button style={{background:"#e31b6d",border:"none", outline:"none" }}
+                className='btn custom-button' type="submit">
+                    Submit
+                </Button>
+            </Form>
+
+            
+        </div>
+    );
+};
+
+export default Contact;

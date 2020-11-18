@@ -7,11 +7,11 @@ const SingleBlogList = (props) => {
     return (
         <div className='mb-4'>
             <div className="card bg-dark text-light">
-                <img src={image} className="card-img-top" alt="..." />
+                <img src={image} className="card-img-top blog-image" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title mt-5">{title}</h5>
+                    <h5 className="card-title text-center mt-4">{title}</h5>
                 </div>
-                <a href={blogLink} target='_blank' className="btn btn-success mb-4 ml-3 mr-3">Read more</a>
+                <a href={blogLink} target='_blank' className="btn btn-success blog-button">Read more</a>
             </div>
         </div>
 

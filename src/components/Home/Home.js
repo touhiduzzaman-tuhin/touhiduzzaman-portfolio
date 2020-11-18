@@ -1,108 +1,88 @@
-// import React from "react";
-// import img from "../../images/touhiduzzaman-tuhin.jpeg";
-// import "./home.scss";
+import React from "react";
+import touhiduzzaman from "../../images/touhiduzzaman-tuhin.JPG";
+import Fade from "react-reveal/Fade";
+import Typical from "react-typical";
+import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
+import resume from '../../files/Resume - React.pdf';
+import { Link } from "react-router-dom";
+import './Home.css';
+const Header = () => {
+  const expertise = [
+    "I am ",
+    2000,
+    "I am a React Native Developer",
+    5000,
+    "I am a Front-end web developer",
+    5000,
+  ];
+  return (
+    <div className="home-page">
+      <div className="container row">
+        <div className="col-md-7 pl-5" style={{ marginTop: "170px" }}>
+          <h5 style={{ color: "rgb(81, 233, 157)" }}>Hello, I am</h5>
+          <Fade left>
+            <h1 className="text-white">Touhiduzzaman</h1>
+          </Fade>
+          <Typical
+            className="text-success mb-5 h3"
+            steps={expertise}
+            loop={Infinity}
+            wrapper="p"
+          />
+          <h6 className="text-white mb-5">
+            I am a react and javascript lover.recently i have finished more than
+            a few projects or many projects on javascript and react.js. so click
+            here (about me) about me know more details
+          </h6>
+          <a
+            style={{ fontSize: "30px", color: "white", paddingRight: "30px" }}
+            href="https://github.com/touhiduzzaman-tuhin" target="_blank"
+          >
+            <FaGithub></FaGithub>
+          </a>
+          <a
+            style={{ fontSize: "30px", color: "white", paddingRight: "30px" }}
+            href="https://www.linkedin.com/in/md-touhiduzzaman-a8451b1b4/" target="_blank"
+          >
+            <FaLinkedin></FaLinkedin>
+          </a>
+          <a
+            style={{ fontSize: "30px", color: "white" }}
+            href="https://www.facebook.com/touhiduzzaman.tuhin.9/" target="_blank"
+          >
+            <FaFacebookSquare></FaFacebookSquare>{" "}
+          </a>
+          <br />
+          <br />
 
-// import Typical from "react-typical";
+          <div className='home-footer'>
+            <Link to="/about">
+              <button
+                class="btn btn-success my-2 my-sm-0 text-white mr-4"
+                type="submit"
+              >
+                About Me
+              </button>
+            </Link>
+            <a href={resume} download="Touhiduzzaman CV.pdf">
+              <button className="btn btn-danger text-white pd-4">
+                Download CV
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className="col-md-5" style={{paddingLeft: '100px'}}>
+          D0C0
+          <img
+            style={{ width: "80%", height: "50%", marginTop: "120px", borderRadius: "50%" }}
+            src={touhiduzzaman}
+            alt=""
+          />
+        </div>
+      
+      </div>
+    </div>
+  );
+};
 
-// import { Link } from "react-router-dom";
-// import ParticlesJs from "./particles";
-
-// const Home = () => {
-//     return (
-//         <div className="homepage">
-//             <div className="container">
-//                 <div
-//                     className="row"
-//                     style={{
-//                         position: "relative",
-//                     }}
-//                 >
-//                     <div className="col-lg-6" data-aos="fade-right">
-//                         <div className="home-text text-center text-md-left">
-//                             <h1>Ahmed Faisal Amit</h1>
-//                             <h4>
-//                                 <Typical
-//                                     loop={Infinity}
-//                                     wrapper="b"
-//                                     steps={[
-//                                         "A Front End Develpoer",
-//                                         1000,
-//                                         "JavaScript Enthusiast",
-//                                         1000,
-//                                         "Love to solve problems",
-//                                         1000,
-//                                     ]}
-//                                 />
-//                             </h4>
-//                             <Link className="hire-me btn" to="/contactme">
-//                                 hire me
-//                             </Link>
-//                             <div className="icon">
-//                                 <a
-//                                     href="https://github.com/iamamit-107"
-//                                     className="social-icon"
-//                                     target="_blank"
-//                                     rel="noopener noreferrer"
-//                                 >
-//                                     <i
-//                                         class="fa fa-github-square"
-//                                         aria-hidden="true"
-//                                     ></i>
-//                                 </a>
-
-//                                 <a
-//                                     href="https://web.facebook.com/afaisalamit/"
-//                                     className="social-icon"
-//                                     target="_blank"
-//                                     rel="noopener noreferrer"
-//                                 >
-//                                     <i
-//                                         class="fa fa-facebook-square"
-//                                         aria-hidden="true"
-//                                     ></i>
-//                                 </a>
-
-//                                 <a
-//                                     href="https://www.linkedin.com/in/afamit/"
-//                                     className="social-icon"
-//                                     target="_blank"
-//                                     rel="noopener noreferrer"
-//                                 >
-//                                     <i
-//                                         class="fa fa-linkedin-square"
-//                                         aria-hidden="true"
-//                                     ></i>
-//                                 </a>
-
-//                                 <a
-//                                     href="https://medium.com/@afamit"
-//                                     target="_blank"
-//                                     className="social-icon"
-//                                     rel="noopener noreferrer"
-//                                 >
-//                                     <i
-//                                         class="fa fa-medium"
-//                                         aria-hidden="true"
-//                                     ></i>
-//                                 </a>
-//                             </div>
-//                         </div>
-//                     </div>
-
-//                     <div
-//                         className="col-lg-6 mb-5 col-md-center justify-content-md-center justify-content-lg-start"
-//                         data-aos="fade-left"
-//                     >
-//                         <div className="text-center text-md-left ">
-//                             <div className="profile-pic">
-//                                 <img src={img} alt="" className="img-fluid" />
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Home;
+export default Header;

@@ -83,7 +83,7 @@ const Header = () => {
                            <h5> Contact</h5>
                     </Link>
                     </Nav.Link>
-                          <a href="https://drive.google.com/file/d/1Rf2soUSTEbEewHdFl8Si3WMze_iXGUfQ/view?usp=sharing" target="_blank"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Resume.pdf</button> </a>
+                          <a href="https://drive.google.com/file/d/1o5TkVM3nM5Gqu9aT3u95L-6cIy8WXrv2/view?usp=sharing" target="_blank"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Resume.pdf</button> </a>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

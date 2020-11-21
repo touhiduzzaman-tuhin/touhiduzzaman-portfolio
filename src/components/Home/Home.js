@@ -3,14 +3,14 @@ import touhiduzzaman from "../../images/touhiduzzaman-tuhin.JPG";
 import Fade from "react-reveal/Fade";
 import Typical from "react-typical";
 import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
-import resume from '../../files/Resume - React.pdf';
+import resume from '../../files/Touhiduzzaman-Javascript-Resume.pdf';
 import { Link } from "react-router-dom";
 import './Home.css';
 const Header = () => {
   const expertise = [
     "I am ",
     2000,
-    "I am a React Native Developer",
+    "I am a Javascript Web Developer",
     5000,
     "I am a Front-end web developer",
     5000,

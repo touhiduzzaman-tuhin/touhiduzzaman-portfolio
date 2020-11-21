@@ -2,11 +2,10 @@ import React from 'react';
 import './MySkills.css'
 const MySkills = () => {
     const skills = ["Javascript", "React.js", "Node.js",  "Express.js", "MongoDB",  "Firebase", "HTML", "CSS", "Bootstrap", "Material UI",
-    "Redux.js", "Sass", "Gatsby", "Graphql",
-    "WordPress", "C"]
+    "C", 'Python']
 
-    const expertise=["Javascript", "React.js", "Node.js",  "Express.js", "MongoDB",  "Firebase", "HTML", "CSS", "Bootstrap", "Material UI"]
-    const comfortable=["Redux.js", "Sass", "Gatsby", "Graphql"]
+    const expertise=["Javascript", "React.js", "Firebase", "HTML", "CSS", "Bootstrap", "Material UI"]
+    const comfortable=["Node.js",  "Express.js", "MongoDB",]
     return (
         <div>
             <div style={{display:"flex", flexDirection:"column"}}>

@@ -33,20 +33,34 @@ const allProjectList = [
 
 
     // },
-    // {
-    //     id: 3,
-    //     name: 'Online Food Servies',
-    //     category: 'Full-Stack.',
-    //     technologies: `React, JavaScript(ES6), Bootstrap 4 for front-end;  Node.js, Express, Heroku for back-end; Firebase for hoisting and authentication; Stripe as payment method; MongoDB for database.`,
-    //     images: {
-    //         img1: 'https://i.ibb.co/1rnkPQJ/img11.png',
-    //         img2: 'https://i.ibb.co/SdcF0hf/img12.png',
-    //         img3: 'https://i.ibb.co/S7DXyWZ/img13.png'
-    //     },
-    //     description: "This site is for selling foods online. Anybody can order foods for breakfast or lunch or dinner and also can track his order. I have done both of front-end and back-end applications for this site.",
-    //     githubRipository: 'https://github.com/S-Delowar/hot-red-onion-project',
-    //     liveWebsite: 'https://red-onion-online-food.web.app/'
-    // },
+    {
+        id: 5,
+        name: 'Travel Guru',
+        category: 'Front-End.',
+        technologies: `React, JavaScript(ES6), Bootstrap 4 for front-end;  Node.js, Express, Heroku for back-end; Firebase for hoisting and authentication; Stripe as payment method.`,
+        images: {
+            img1: 'https://i.ibb.co/c2Jx0BS/travel-guru-rangpur-web-app.png',
+            img2: 'https://i.ibb.co/Z1tQpGY/Capture1.png',
+            img3: 'https://i.ibb.co/ZhzfDpv/Capture.png'
+        },
+        description: "A front-end Travel-Place app where you can choose your favorite place. You have Many options for different Place. Pay online using your credit card and enjoy Traveling World.",
+        githubRipository: 'https://github.com/touhiduzzaman-tuhin/travel-guru-rangpur',
+        liveWebsite: 'https://travel-guru-rangpur.web.app/'
+    },
+    {
+        id: 6,
+        name: 'Red Onion Restaurant',
+        category: 'Front-End.',
+        technologies: `React, JavaScript(ES6), Bootstrap 4 for front-end;  Node.js, Express, Heroku for back-end; Firebase for hoisting and authentication; Stripe as payment method.`,
+        images: {
+            img1: 'https://i.ibb.co/1rnkPQJ/img11.png',
+            img2: 'https://i.ibb.co/SdcF0hf/img12.png',
+            img3: 'https://i.ibb.co/S7DXyWZ/img13.png'
+        },
+        description: "This site is for selling foods online. Anybody can order foods for breakfast or lunch or dinner and also can track his order. I have done both of front-end and back-end applications for this site.",
+        githubRipository: 'https://github.com/touhiduzzaman-tuhin/hot-onion-restaurant-rangpur',
+        liveWebsite: 'https://hot-onion-restaurant-rangpur.web.app/'
+    },
     {
         id: 7,
         name: 'News feed Posts',

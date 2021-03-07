@@ -3,7 +3,7 @@ import touhiduzzaman from "../../images/touhiduzzaman-tuhin.JPG";
 import Fade from "react-reveal/Fade";
 import Typical from "react-typical";
 import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
-import resume from '../../files/Touhiduzzaman-Javascript-Resume.pdf';
+import resume from '../../files/Touhiduzzaman-tuhin.pdf';
 import { Link } from "react-router-dom";
 import './Home.css';
 const Header = () => {
